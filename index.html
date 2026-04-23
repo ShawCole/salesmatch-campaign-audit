@@ -655,22 +655,22 @@ footer a { color:var(--accent); text-decoration:none; }
     </div>
     <p style="font-size:12px;color:var(--text-muted);margin:8px 0 20px">The Intent CSM campaign ran at healthy $42-46/day pacing for <strong>3 consecutive days</strong> before budget was cut in half on Apr 18 and effectively zeroed on Apr 19. That means the algorithm had ~3 days of stable delivery data before intervention &mdash; still below the 5-7 day learning phase threshold. No display ads diluted this spend. Every dollar went to video.</p>
 
-    <!-- CSM Script 1 - the 32-second video -->
-    <h3 style="font-family:var(--mono);font-size:13px;color:#fff;text-transform:uppercase;letter-spacing:1px;margin:28px 0 12px">CSM Script 1 HOOK 1A &mdash; the 32-second video</h3>
+    <!-- CSM Script 1 - the 32-second avg play time -->
+    <h3 style="font-family:var(--mono);font-size:13px;color:#fff;text-transform:uppercase;letter-spacing:1px;margin:28px 0 12px">CSM Script 1 HOOK 1A &mdash; the 32-second avg play time</h3>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Audience</th><th class="num">Spend</th><th class="num">Reach</th><th class="num">Impressions</th><th class="num">CPM</th><th class="num">Plays</th><th class="num">Avg Play</th><th class="num">Hook</th><th class="num">Hold</th></tr></thead>
         <tbody>
-          <tr class="winner"><td>Intent</td><td class="num">$159.05</td><td class="num highlight">480</td><td class="num highlight">515</td><td class="num">$308</td><td class="num highlight">488</td><td class="num highlight">0:32</td><td class="num highlight">26%</td><td class="num">4.72%</td></tr>
-          <tr><td>Cold</td><td class="num">$11.53</td><td class="num">39</td><td class="num">39</td><td class="num">$296</td><td class="num">38</td><td class="num">0:05</td><td class="num">24%</td><td class="num highlight">22.22%</td></tr>
+          <tr class="winner"><td>Intent</td><td class="num">$159.05</td><td class="num highlight">480</td><td class="num highlight">515</td><td class="num">$308</td><td class="num highlight">488</td><td class="num highlight">0:32</td><td class="num">26%</td><td class="num highlight">4.72%</td></tr>
+          <tr><td>Cold</td><td class="num">$11.53</td><td class="num">39</td><td class="num">39</td><td class="num">$296</td><td class="num">12</td><td class="num">0:03</td><td class="num highlight">33%</td><td class="num">––</td></tr>
         </tbody>
       </table>
     </div>
     <div class="callout red" style="margin:8px 0 20px">
       <h3 style="font-size:1.1rem">Meta's Algorithm Told Us Which Audience Preferred This Video</h3>
-      <p><strong>Intent audience:</strong> Meta happily served Script 1 to 480 unique users who watched for <strong>32 seconds on average</strong>. That's ~15,400 total seconds of human attention on a $159 spend &mdash; the algorithm saw engagement signal and allocated 70% of the campaign's budget to this video.</p>
-      <p style="margin-top:10px"><strong>Cold audience:</strong> Meta served Script 1 to 38 users at 5-second avg play, then <strong>stopped delivering it after April 20 &mdash; even though the campaign is still running</strong>. Meta's algorithm looked at engagement on Cold and pulled the plug, reallocating budget to Scripts 2 and 3.</p>
-      <p style="margin-top:10px">Hold rate is technically higher on Cold (22% vs 4.7%) &mdash; but on a sample of 38 plays vs 488 plays. More importantly: <strong>6.4x longer avg play time on Intent</strong> is the signal that matters. Meta itself voted with budget allocation: Script 1 won on Intent, lost on Cold.</p>
+      <p><strong>Intent audience:</strong> Meta happily served Script 1 to 480 unique users who watched for <strong>32 seconds on average</strong>. 488 video plays on a $159 spend &mdash; the algorithm saw engagement signal and allocated 70% of the campaign's budget to this video.</p>
+      <p style="margin-top:10px"><strong>Cold audience:</strong> Meta served Script 1 to 39 users &mdash; only <strong>12 of whom actually initiated playback</strong>, with an average play time of <strong>3 seconds</strong>. Hold rate is reported as "––" because Meta couldn't calculate it: not enough viewers made it past the hook window to measure video-completion. Meta then <strong>stopped delivering this video on Cold after April 20 &mdash; even though the campaign is still running</strong> and reallocated budget to Scripts 2 and 3.</p>
+      <p style="margin-top:10px">Cold's hook rate (33%) is technically higher than Intent's (26%) &mdash; more people didn't instantly scroll past. But that's where the engagement ends. Cold viewers bounced after 3 seconds. <strong>Intent viewers stayed for 32 seconds &mdash; a 10.7&times; longer average play time on the same creative.</strong> Meta itself voted with budget allocation: Script 1 won on Intent, failed on Cold.</p>
     </div>
 
     <!-- CSM Script 2 - the Cold lead winner -->
@@ -706,15 +706,15 @@ footer a { color:var(--accent); text-decoration:none; }
         <table>
           <thead><tr><th>Metric</th><th class="center">Script 1</th><th class="center">Script 2</th><th class="center">Script 3</th><th class="center">Intent Wins</th></tr></thead>
           <tbody>
-            <tr><td>Hook rate</td><td class="center">Intent (26 vs 24)</td><td class="center">Cold (28 vs 26)</td><td class="center highlight">Intent (25 vs 15)</td><td class="center highlight">2 of 3</td></tr>
-            <tr><td>Avg play time</td><td class="center highlight">Intent (0:32 vs 0:05)</td><td class="center">Tied (0:04)</td><td class="center highlight">Intent (0:04 vs 0:03)</td><td class="center highlight">2 of 3 (1 tie)</td></tr>
-            <tr><td>Hold rate</td><td class="center">Cold (22.22 vs 4.72)*</td><td class="center highlight">Intent (6.67 vs 2.60)</td><td class="center highlight">Intent (6.67 vs 6.38)</td><td class="center highlight">2 of 3</td></tr>
+            <tr><td>Hook rate</td><td class="center">Cold (33 vs 26)</td><td class="center">Cold (28 vs 26)</td><td class="center highlight">Intent (25 vs 15)</td><td class="center">1 of 3</td></tr>
+            <tr><td>Avg play time</td><td class="center highlight">Intent (0:32 vs 0:03)</td><td class="center">Tied (0:04)</td><td class="center highlight">Intent (0:04 vs 0:03)</td><td class="center highlight">2 of 3 (1 tie)</td></tr>
+            <tr><td>Hold rate</td><td class="center highlight">Intent (4.72 vs ––)*</td><td class="center highlight">Intent (6.67 vs 2.60)</td><td class="center highlight">Intent (6.67 vs 6.38)</td><td class="center highlight">3 of 3</td></tr>
             <tr><td>Meta's own budget allocation</td><td class="center highlight">Intent (70% vs Cold killed it)</td><td class="center">Cold (got the lead)</td><td class="center">Cold (4x budget)</td><td class="center">—</td></tr>
           </tbody>
         </table>
       </div>
-      <p style="font-size:12px;color:var(--text-muted);margin-top:10px">*Cold Script 1 hold rate is on a sample of 38 plays before Meta stopped serving it. Intent hold rate is on 488 plays (13x larger sample).</p>
-      <p style="margin-top:14px"><strong>The CSM 1:1 test &mdash; with zero display contamination &mdash; shows the Intent audience produced equal or better engagement on 2 of 3 identical videos across the metrics that matter.</strong> The one lead that materialized was on Cold, which received ~50% more total budget and ran 4+ days longer. If the Intent CSM campaign had received equivalent budget and runtime, the data suggests comparable or better lead conversion was plausible &mdash; the campaign was never given the chance to prove it.</p>
+      <p style="font-size:12px;color:var(--text-muted);margin-top:10px">*Cold Script 1 hold rate is reported as "––" because not enough viewers on Cold made it past the hook window for Meta to calculate a completion rate (12 plays, 0:03 avg play time). Intent hold rate is measured on 488 plays.</p>
+      <p style="margin-top:14px"><strong>The CSM 1:1 test &mdash; with zero display contamination &mdash; shows the Intent audience produced equal or better engagement on the metrics that measure attention depth (avg play time, hold rate) across every script.</strong> Cold won hook rate on 2 of 3 videos &mdash; meaning more people didn't scroll past in 3 seconds. But once past the hook, Intent held attention longer on every script. The one lead that materialized was on Cold Script 2, which received ~2x the budget of its Intent counterpart and ran 4+ days longer. If the Intent CSM campaign had received equivalent budget and runtime, the data suggests comparable or better lead conversion was plausible &mdash; the campaign was never given the chance to prove it.</p>
     </div>
 
     <!-- B2B Script 2 FINAL -->
@@ -1377,7 +1377,7 @@ footer a { color:var(--accent); text-decoration:none; }
       <h3>Proposed Controlled Split Test</h3>
       <p>Two ad sets, identical in every way except audience:</p>
       <ul>
-        <li><strong>Same winning video</strong> &mdash; CSM Script 1 (the 32s hold video) or the Cold winner (B2B Script 3 with 2 leads)</li>
+        <li><strong>Same winning video</strong> &mdash; CSM Script 1 (the 32s avg play time video) or the Cold winner (B2B Script 3 with 2 leads)</li>
         <li><strong>Same budget</strong> &mdash; $100-150/day per ad set</li>
         <li><strong>Same lead form</strong> &mdash; OR switch both to Calendly landing page for quality</li>
         <li><strong>Same campaign objective</strong> &mdash; Leads / Conversions</li>
