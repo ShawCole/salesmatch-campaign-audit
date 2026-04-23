@@ -39,7 +39,34 @@
   --mono: 'JetBrains Mono', monospace;
 }
 * { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
 body { font-family:var(--sans); background:var(--bg); color:var(--text); line-height:1.6; -webkit-font-smoothing:antialiased; }
+
+/* REFERENCE BADGE — clickable link to Section 11 case studies */
+.ref-badge {
+  display: inline-block;
+  padding: 1px 6px;
+  font-size: 10px;
+  font-family: var(--mono);
+  font-weight: 500;
+  background: rgba(99,102,241,0.12);
+  border: 1px solid rgba(99,102,241,0.4);
+  color: var(--accent);
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 0 2px;
+  vertical-align: middle;
+  transition: all 0.15s;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.ref-badge:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
 .container { max-width:1280px; margin:0 auto; padding:0 24px; }
 
 /* NAV */
@@ -884,25 +911,25 @@ footer a { color:var(--accent); text-decoration:none; }
           <tr><td>Craig's current baseline</td><td class="num">?</td><td class="num">?</td><td class="num">$2,000</td><td>&mdash; reference point</td></tr>
           <tr><td>Cold audience &mdash; low close rate (typical)</td><td class="num">$208</td><td class="num">10%</td><td class="num bad">$2,080</td><td class="bad">Same as current</td></tr>
           <tr><td>Cold audience &mdash; industry avg close rate</td><td class="num">$208</td><td class="num">5%</td><td class="num bad">$4,160</td><td class="bad">2x worse than current</td></tr>
-          <tr class="winner"><td>Intent audience &mdash; Bombora/6sense benchmark</td><td class="num">$150</td><td class="num">20%</td><td class="num highlight">$750</td><td class="highlight">2.7x better than baseline</td></tr>
+          <tr class="winner"><td>Intent audience &mdash; Bombora/6sense benchmark <a href="#casestudies" class="ref-badge">ref</a></td><td class="num">$150</td><td class="num">20%</td><td class="num highlight">$750</td><td class="highlight">2.7x better than baseline</td></tr>
           <tr class="winner"><td>Intent audience &mdash; high-performing intent</td><td class="num">$200</td><td class="num">30%</td><td class="num highlight">$667</td><td class="highlight">3x better than baseline</td></tr>
           <tr><td>Intent audience &mdash; conservative case</td><td class="num">$250</td><td class="num">15%</td><td class="num">$1,667</td><td>17% better than baseline</td></tr>
           <tr><td>Intent audience &mdash; floor / worst case</td><td class="num">$300</td><td class="num">8%</td><td class="num bad">$3,750</td><td class="bad">Worse &mdash; intent didn't qualify</td></tr>
         </tbody>
       </table>
     </div>
-    <p style="font-size:13px;color:var(--text-muted);margin:12px 0 24px">Against Craig's $2,000 baseline, intent data needs approximately <strong>a 15% close rate at ~$300 CPL</strong> to break even. The published B2B intent benchmarks (15-30% close rates via Bombora, 6sense, Metadata case studies) suggest even conservative intent performance should land well under $2,000 CAC. But <strong>none of this math is proven until we measure actual close rate on intent-sourced leads</strong> &mdash; which requires running the test long enough to generate leads, then waiting 30-90 days for sales cycle completion.</p>
+    <p style="font-size:13px;color:var(--text-muted);margin:12px 0 24px">Against Craig's $2,000 baseline, intent data needs approximately <strong>a 15% close rate at ~$300 CPL</strong> to break even. The published B2B intent benchmarks (15-30% close rates via Bombora, 6sense, Metadata case studies <a href="#casestudies" class="ref-badge">ref</a>) suggest even conservative intent performance should land well under $2,000 CAC. But <strong>none of this math is proven until we measure actual close rate on intent-sourced leads</strong> &mdash; which requires running the test long enough to generate leads, then waiting 30-90 days for sales cycle completion.</p>
 
     <h3 style="font-family:var(--serif);font-size:1.3rem;color:#fff;margin:28px 0 14px;font-weight:400">Published B2B Close Rate Differential: Intent vs Cold</h3>
     <div class="strat-grid">
       <div class="strat-block">
         <h4><span style="color:var(--green)">◆</span> Intent Audience Close Rates</h4>
         <ul>
-          <li>Bombora-identified intent accounts: <strong>2-3x higher close rate</strong> than cold</li>
-          <li>6sense customers report <strong>9% higher win rate</strong> at 6QA (high intent) accounts vs non-intent</li>
-          <li>Qualified + Metadata case study: <strong>90%+ MQL rate</strong> from intent-sourced leads (vs industry avg ~25%)</li>
-          <li>Madison Logic ABM + intent: <strong>+28% close rate lift</strong> on Tier 1 accounts</li>
-          <li>Intent data leads convert to opportunity at <strong>15-22%</strong> vs cold at <strong>5-10%</strong> (multiple studies)</li>
+          <li>Bombora-identified intent accounts: <strong>2-3x higher close rate</strong> than cold <a href="#casestudies" class="ref-badge">ref</a></li>
+          <li>6sense customers report <strong>9% higher win rate</strong> at 6QA (high intent) accounts vs non-intent <a href="#casestudies" class="ref-badge">ref</a></li>
+          <li>Qualified + Metadata case study: <strong>90%+ MQL rate</strong> from intent-sourced leads (vs industry avg ~25%) <a href="#casestudies" class="ref-badge">ref</a></li>
+          <li>Madison Logic ABM + intent: <strong>+28% close rate lift</strong> on Tier 1 accounts <a href="#casestudies" class="ref-badge">ref</a></li>
+          <li>Intent data leads convert to opportunity at <strong>15-22%</strong> vs cold at <strong>5-10%</strong> (multiple studies) <a href="#casestudies" class="ref-badge">ref</a></li>
         </ul>
       </div>
       <div class="strat-block">
@@ -944,7 +971,7 @@ footer a { color:var(--accent); text-decoration:none; }
         <li>Those leads <strong>close or don't close</strong> over a 30-90 day sales cycle</li>
         <li>We measure CAC per audience source and compare to $2,000</li>
       </ol>
-      <p style="margin-top:14px">Declaring intent a "signal failure" on CPL data in a 4-day window &mdash; without running the test to CAC completion &mdash; is the exact mechanism by which B2B intent data gets incorrectly dismissed. The entire B2B intent industry (Bombora, 6sense, Demandbase, Metadata, Clay) exists because intent data's value shows up at CAC, not CPL. Evaluating it on CPL alone &mdash; the metric Craig himself called a vanity metric &mdash; undersells the opportunity.</p>
+      <p style="margin-top:14px">Declaring intent a "signal failure" on CPL data in a 4-day window &mdash; without running the test to CAC completion &mdash; is the exact mechanism by which B2B intent data gets incorrectly dismissed. The entire B2B intent industry (Bombora, 6sense, Demandbase, Metadata, Clay) exists because intent data's value shows up at CAC, not CPL <a href="#casestudies" class="ref-badge">ref</a>. Evaluating it on CPL alone &mdash; the metric Craig himself called a vanity metric &mdash; undersells the opportunity.</p>
     </div>
   </div>
 </section>
@@ -1709,16 +1736,5 @@ footer a { color:var(--accent); text-decoration:none; }
   </div>
 </footer>
 
-<script>
-// Auto-scroll to B2B case studies on load (unless a different hash is explicitly targeted)
-window.addEventListener('load', function() {
-  if (!window.location.hash) {
-    setTimeout(function() {
-      var target = document.getElementById('casestudies');
-      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 400);
-  }
-});
-</script>
 </body>
 </html>
