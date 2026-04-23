@@ -1293,56 +1293,56 @@ footer a { color:var(--accent); text-decoration:none; }
 
     <div class="evidence-grid">
       <div class="ev-card">
-        <div class="source">ThoughtSpot &middot; Metadata + 6sense + G2</div>
+        <div class="source"><a href="https://metadata.io/resources/case-study/thoughtspot/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-decoration-color:var(--text-dim)">ThoughtSpot &middot; Metadata + 6sense + G2 &#8599;</a></div>
         <span class="metric">9.8x ROAS</span>
         <p class="desc"><strong>64 Facebook-sourced opportunities in 6 months, $2.8M pipeline.</strong> Ran 86 campaigns / 1,600+ experiments with intent-data-driven custom audiences on Meta.</p>
         <p class="ctx">Structure: consolidated audiences, ABM-layered, closed-won LAL seeds, high-EMQ CAPI.</p>
       </div>
 
       <div class="ev-card">
-        <div class="source">Qualified &middot; Metadata + Signals intent</div>
+        <div class="source"><a href="https://metadata.io/resources/case-study/qualified/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-decoration-color:var(--text-dim)">Qualified &middot; Metadata + Signals intent &#8599;</a></div>
         <span class="metric">927% ROI</span>
         <p class="desc"><strong>$3.5M pipeline + $6.9M influenced in 5 months.</strong> Ran intent data as Facebook + LinkedIn audiences simultaneously, measuring close rate, not just CPL.</p>
         <p class="ctx">Key: measured in CRM, not Ads Manager. Meta attribution window too short for B2B cycle.</p>
       </div>
 
       <div class="ev-card">
-        <div class="source">Automation Anywhere &middot; Metadata + Bombora + 6sense</div>
+        <div class="source"><a href="https://metadata.io/resources/case-study/automation-anywhere/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-decoration-color:var(--text-dim)">Automation Anywhere &middot; Metadata + Bombora + 6sense &#8599;</a></div>
         <span class="metric">+36%</span>
         <p class="desc"><strong>Average deal size increase</strong> using dynamic Salesforce + intent audiences on Facebook. 90%+ MQL rate.</p>
         <p class="ctx">Proof that intent audiences can improve deal quality, not just volume.</p>
       </div>
 
       <div class="ev-card">
-        <div class="source">Metadata + G2 Intent Data</div>
+        <div class="source"><a href="https://sell.g2.com/case-studies/case-study-metadata-lowers-cpl" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-decoration-color:var(--text-dim)">Metadata + G2 Intent Data &#8599;</a></div>
         <span class="metric">-42% CPL</span>
         <p class="desc"><strong>CPL dropped 42%</strong> when activating G2 buyer-intent on Meta vs LinkedIn Conversation Ads (where CPL had exhausted from $80-90 up to $200).</p>
         <p class="ctx">Meta outperformed LinkedIn for this specific B2B SaaS with intent activation.</p>
       </div>
 
       <div class="ev-card">
-        <div class="source">Bonterra &middot; 6sense ABM</div>
+        <div class="source"><a href="https://6sense.com/blog/proven-abm-tactics/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-decoration-color:var(--text-dim)">Bonterra &middot; 6sense ABM &#8599;</a></div>
         <span class="metric">$6M</span>
         <p class="desc"><strong>Pipeline influenced, 445% YoY increase.</strong> Full-funnel ABM with Meta as retargeting amplifier to 6sense intent-identified accounts.</p>
         <p class="ctx">Meta as the amplifier, LinkedIn + email as primary touch.</p>
       </div>
 
       <div class="ev-card">
-        <div class="source">PaperCut Software &middot; 6sense</div>
+        <div class="source"><a href="https://6sense.com/blog/proven-abm-tactics/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-decoration-color:var(--text-dim)">PaperCut Software &middot; 6sense &#8599;</a></div>
         <span class="metric">9x ROI</span>
         <p class="desc"><strong>Marketing spend ROI via ABM</strong> with intent-data custom audiences pushed to Meta from 6sense Segments integration.</p>
         <p class="ctx">Native 6sense → Meta integration, auto-refreshed dynamic audiences.</p>
       </div>
 
       <div class="ev-card">
-        <div class="source">Frame.io &middot; Clearbit enrichment</div>
+        <div class="source"><a href="https://clearbit.com/customers/frameio" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-decoration-color:var(--text-dim)">Frame.io &middot; Clearbit enrichment &#8599;</a></div>
         <span class="metric">3x match</span>
         <p class="desc"><strong>Tripled Facebook match rates</strong> via Clearbit's non-professional-email enrichment. Baseline B2B match of 10-15% → 30-45%.</p>
         <p class="ctx">Match rate is the single biggest B2B Meta unlock.</p>
       </div>
 
       <div class="ev-card">
-        <div class="source">Clay Ads &middot; GTME case study</div>
+        <div class="source"><a href="https://thegtme.com/p/how-we-dropped-cost-per-lead-from" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-decoration-color:var(--text-dim)">Clay Ads &middot; GTME case study &#8599;</a></div>
         <span class="metric">-90% CPL</span>
         <p class="desc"><strong>CPL from $250 to $25</strong> using Clay waterfall enrichment (150+ providers) to push hashed personal emails to Meta at 70%+ match rate.</p>
         <p class="ctx">Waterfall enrichment is the current best-practice B2B Meta stack.</p>
@@ -1709,5 +1709,16 @@ footer a { color:var(--accent); text-decoration:none; }
   </div>
 </footer>
 
+<script>
+// Auto-scroll to B2B case studies on load (unless a different hash is explicitly targeted)
+window.addEventListener('load', function() {
+  if (!window.location.hash) {
+    setTimeout(function() {
+      var target = document.getElementById('casestudies');
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 400);
+  }
+});
+</script>
 </body>
 </html>
