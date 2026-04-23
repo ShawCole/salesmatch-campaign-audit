@@ -231,6 +231,7 @@ footer a { color:var(--accent); text-decoration:none; }
       <a href="#intent">Intent</a>
       <a href="#cold">Cold</a>
       <a href="#headtohead">Head-to-Head</a>
+      <a href="#caccpl">CAC vs CPL</a>
       <a href="#timeline">Timeline</a>
       <a href="#algorithm">Algorithm</a>
       <a href="#casestudies">B2B Cases</a>
@@ -264,7 +265,7 @@ footer a { color:var(--accent); text-decoration:none; }
     <div class="kf-hero">
       <span class="label">Core Finding</span>
       <div class="headline">The two phases are <em>not comparable</em>. At least six variables changed between them &mdash; including creative format, ad set structure, per-video budget, and runtime. The custom audience was only one of them.</div>
-      <p class="sub">Approximately 50% of the Intent test budget (~$860 of $1,620) went to display ad units that produced zero leads. Micha, the CMO, shut off those displays roughly 2 days into the test (April 17). That left the Intent audience campaigns running in video-only configuration for just 1-2 days before being killed entirely on April 19. The Cold campaigns have since been running video-only for 4+ days and counting. Meta's learning phase requires 5-7 days minimum to stabilize on a conversion objective. One test was run to completion. The other was killed before learning could start.</p>
+      <p class="sub">Approximately 50% of the Intent test budget (~$860 of $1,620) went to display ad units that produced zero leads. Those displays were shut off roughly 2 days into the test (April 17). That left the Intent audience campaigns running in video-only configuration for just 1-2 days before being killed entirely on April 19. The Cold campaigns have since been running video-only for 4+ days and counting. Meta's learning phase requires 5-7 days minimum to stabilize on a conversion objective. One test was run to completion. The other was killed before learning could start.</p>
     </div>
 
     <div class="callout green">
@@ -518,7 +519,7 @@ footer a { color:var(--accent); text-decoration:none; }
     <div class="callout red">
       <h3>Intent Summary</h3>
       <p><strong>Total spend:</strong> $1,623.56 · <strong>Total leads:</strong> 0 · <strong>Runtime:</strong> 5 days (Apr 15-19)</p>
-      <p style="margin-top:10px"><strong>Display ads consumed roughly 50% of total Intent budget ($760+).</strong> Displays were turned off by the CMO in the middle of the phase (~April 17), leaving the Intent campaigns in video-only configuration for approximately 1-2 days before being killed on April 19.</p>
+      <p style="margin-top:10px"><strong>Display ads consumed roughly 50% of total Intent budget ($760+).</strong> Displays were turned off mid-phase (~April 17), leaving the Intent campaigns in video-only configuration for approximately 1-2 days before being killed on April 19.</p>
     </div>
   </div>
 </section>
@@ -612,8 +613,8 @@ footer a { color:var(--accent); text-decoration:none; }
 
     <div class="callout green">
       <h3>Cold Summary</h3>
-      <p><strong>Total spend:</strong> $625.45 · <strong>Total leads:</strong> 3 · <strong>Cost per result:</strong> $208 · <strong>Runtime:</strong> 4+ days (still running)</p>
-      <p style="margin-top:10px">No display ads. Budget concentrated across 3 ad sets, fewer creatives, higher per-video budget (~$57 avg vs Intent's ~$28 avg). $208 cost per booked call is within published B2B benchmark range of $150-400.</p>
+      <p><strong>Total spend:</strong> $625.45 · <strong>Total leads:</strong> 3 · <strong>Blended CPL:</strong> $208 · <strong>Meta-reported CPR (best video):</strong> $38.36 · <strong>Runtime:</strong> 4+ days (still running)</p>
+      <p style="margin-top:10px">No display ads. Budget concentrated across 3 ad sets, fewer creatives, higher per-video budget (~$57 avg vs Intent's ~$28 avg). These are <strong>Cost-Per-Lead metrics, not CAC</strong>. CAC cannot be calculated until leads convert to closed deals in the CRM. Meta reports CPR per video; blended CPL is total spend ÷ leads.</p>
     </div>
   </div>
 </section>
@@ -676,14 +677,14 @@ footer a { color:var(--accent); text-decoration:none; }
     <h3 style="font-family:var(--mono);font-size:13px;color:#fff;text-transform:uppercase;letter-spacing:1px;margin:28px 0 12px">CSM Script 2 HOOK 3B &mdash; Cold's lead winner</h3>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>Audience</th><th class="num">Spend</th><th class="num">Reach</th><th class="num">Impressions</th><th class="num">CPM</th><th class="num">Plays</th><th class="num">Avg Play</th><th class="num">Hook</th><th class="num">Hold</th><th class="num">Leads</th></tr></thead>
+        <thead><tr><th>Audience</th><th class="num">Spend</th><th class="num">Reach</th><th class="num">Imp.</th><th class="num">CPM</th><th class="num">Plays</th><th class="num">Avg Play</th><th class="num">Hook</th><th class="num">Hold</th><th class="num">Leads</th><th class="num">Meta CPR</th></tr></thead>
         <tbody>
-          <tr class="winner"><td>Intent</td><td class="num">$44.35</td><td class="num">113</td><td class="num">115</td><td class="num">$385</td><td class="num">114</td><td class="num">0:04</td><td class="num">26%</td><td class="num highlight">6.67%</td><td class="num">–</td></tr>
-          <tr><td>Cold</td><td class="num">$89.56</td><td class="num">307</td><td class="num">313</td><td class="num highlight">$286</td><td class="num">275</td><td class="num">0:04</td><td class="num highlight">28%</td><td class="num">2.60%</td><td class="num highlight">1</td></tr>
+          <tr class="winner"><td>Intent</td><td class="num">$44.35</td><td class="num">113</td><td class="num">115</td><td class="num">$385</td><td class="num">114</td><td class="num">0:04</td><td class="num">26%</td><td class="num highlight">6.67%</td><td class="num">–</td><td class="num">–</td></tr>
+          <tr><td>Cold</td><td class="num">$89.56</td><td class="num">307</td><td class="num">313</td><td class="num highlight">$286</td><td class="num">275</td><td class="num">0:04</td><td class="num highlight">28%</td><td class="num">2.60%</td><td class="num highlight">1</td><td class="num">$38.36</td></tr>
         </tbody>
       </table>
     </div>
-    <p style="font-size:12px;color:var(--text-muted);margin:8px 0 20px">Hook rates nearly tied (26% vs 28%). Avg play time tied at 0:04. <strong>Intent had 2.5x higher hold rate (6.67% vs 2.60%)</strong>. Cold got the 1 lead on this video &mdash; at 2.6% hold rate, which is notably lower than Intent's hold rate. That lead happened because Cold got 2x the budget and 2.7x the impressions, not because of stronger engagement signal.</p>
+    <p style="font-size:12px;color:var(--text-muted);margin:8px 0 20px">Hook rates nearly tied (26% vs 28%). Avg play time tied at 0:04. <strong>Intent had 2.5x higher hold rate (6.67% vs 2.60%)</strong>. Cold generated the 1 lead (Meta-reported cost per result: $38.36) &mdash; at 2.6% hold rate, notably lower than Intent's 6.67%. Engagement was stronger on Intent; Cold just got the runtime and budget to convert. <strong>This CPR of $38.36 is a Cost Per Lead metric, not CAC</strong> &mdash; see the CAC vs CPL section below.</p>
 
     <!-- CSM Script 3 -->
     <h3 style="font-family:var(--mono);font-size:13px;color:#fff;text-transform:uppercase;letter-spacing:1px;margin:28px 0 12px">CSM Script 3 HOOK 3A</h3>
@@ -817,12 +818,106 @@ footer a { color:var(--accent); text-decoration:none; }
   </div>
 </section>
 
+<!-- CAC vs CPL -->
+<section id="caccpl">
+  <div class="container">
+    <div class="section-label">Section 05 — The Metric That Actually Matters</div>
+    <h2>CAC vs CPL: <em>Measured Against Craig's $2,000 Baseline</em></h2>
+    <p class="section-desc">Craig has said his current CAC to acquire a new client sits around <strong>$2,000</strong>. Craig has also called CPL a "vanity metric." That's the right framing. The question this test needs to answer isn't "what's the CPL" &mdash; it's "can intent data push CAC below $2,000." Neither phase of this test produced enough data to answer that question.</p>
+
+    <div class="callout red">
+      <h3>The Data We Actually Have — And Don't</h3>
+      <p>Both phases produced insufficient data to measure CPL or CAC with any confidence:</p>
+      <ul>
+        <li><strong>Intent:</strong> 0 leads &rarr; no CPL, no CAC. Campaign killed in learning phase (day 5 of 14+ needed).</li>
+        <li><strong>Cold:</strong> 3 leads at ~$625 spend over 4 days. Meta reports $38.36 CPR on the winning video, $208 blended CPL across all 3 ad sets. <strong>Zero of those leads have closed yet</strong> &mdash; so Cold CAC is also undefined.</li>
+        <li><strong>Neither campaign has run long enough</strong> for B2B sales cycles (typically 30-90 days from lead to close) to produce a single CAC data point.</li>
+      </ul>
+      <p style="margin-top:12px"><strong>The audit report declared "signal failure" on vanity-CPL data alone &mdash; a metric Craig himself has publicly called vanity.</strong> The test hasn't produced CAC data yet, for either audience.</p>
+    </div>
+
+    <h3 style="font-family:var(--serif);font-size:1.3rem;color:#fff;margin:28px 0 14px;font-weight:400">The CAC Math Anchored on Craig's $2,000 Baseline</h3>
+    <p style="font-size:14px;color:var(--text);margin-bottom:14px">Craig's current CAC is ~$2,000 per new client. That's the number intent data has to beat to justify its existence. The table below shows what close rate &times; CPL combinations land at, against and below that baseline.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Scenario</th><th class="num">CPL</th><th class="num">Close Rate</th><th class="num">Calculated CAC</th><th>vs Craig's $2,000 baseline</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Craig's current baseline</td><td class="num">?</td><td class="num">?</td><td class="num">$2,000</td><td>&mdash; reference point</td></tr>
+          <tr><td>Cold audience &mdash; low close rate (typical)</td><td class="num">$208</td><td class="num">10%</td><td class="num bad">$2,080</td><td class="bad">Same as current</td></tr>
+          <tr><td>Cold audience &mdash; industry avg close rate</td><td class="num">$208</td><td class="num">5%</td><td class="num bad">$4,160</td><td class="bad">2x worse than current</td></tr>
+          <tr class="winner"><td>Intent audience &mdash; Bombora/6sense benchmark</td><td class="num">$150</td><td class="num">20%</td><td class="num highlight">$750</td><td class="highlight">2.7x better than baseline</td></tr>
+          <tr class="winner"><td>Intent audience &mdash; high-performing intent</td><td class="num">$200</td><td class="num">30%</td><td class="num highlight">$667</td><td class="highlight">3x better than baseline</td></tr>
+          <tr><td>Intent audience &mdash; conservative case</td><td class="num">$250</td><td class="num">15%</td><td class="num">$1,667</td><td>17% better than baseline</td></tr>
+          <tr><td>Intent audience &mdash; floor / worst case</td><td class="num">$300</td><td class="num">8%</td><td class="num bad">$3,750</td><td class="bad">Worse &mdash; intent didn't qualify</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:13px;color:var(--text-muted);margin:12px 0 24px">Against Craig's $2,000 baseline, intent data needs approximately <strong>a 15% close rate at ~$300 CPL</strong> to break even. The published B2B intent benchmarks (15-30% close rates via Bombora, 6sense, Metadata case studies) suggest even conservative intent performance should land well under $2,000 CAC. But <strong>none of this math is proven until we measure actual close rate on intent-sourced leads</strong> &mdash; which requires running the test long enough to generate leads, then waiting 30-90 days for sales cycle completion.</p>
+
+    <h3 style="font-family:var(--serif);font-size:1.3rem;color:#fff;margin:28px 0 14px;font-weight:400">Published B2B Close Rate Differential: Intent vs Cold</h3>
+    <div class="strat-grid">
+      <div class="strat-block">
+        <h4><span style="color:var(--green)">◆</span> Intent Audience Close Rates</h4>
+        <ul>
+          <li>Bombora-identified intent accounts: <strong>2-3x higher close rate</strong> than cold</li>
+          <li>6sense customers report <strong>9% higher win rate</strong> at 6QA (high intent) accounts vs non-intent</li>
+          <li>Qualified + Metadata case study: <strong>90%+ MQL rate</strong> from intent-sourced leads (vs industry avg ~25%)</li>
+          <li>Madison Logic ABM + intent: <strong>+28% close rate lift</strong> on Tier 1 accounts</li>
+          <li>Intent data leads convert to opportunity at <strong>15-22%</strong> vs cold at <strong>5-10%</strong> (multiple studies)</li>
+        </ul>
+      </div>
+      <div class="strat-block">
+        <h4><span style="color:var(--blue)">◆</span> What SalesMatch Needs to Measure</h4>
+        <ul>
+          <li><strong>Lead &rarr; SDR contact rate</strong> per audience source</li>
+          <li><strong>SDR contact &rarr; sales call rate</strong> per audience source</li>
+          <li><strong>Sales call &rarr; closed deal rate</strong> per audience source</li>
+          <li><strong>Average deal size</strong> per audience source (intent deals often larger)</li>
+          <li><strong>Time to close</strong> per audience source (intent often faster)</li>
+          <li><strong>CAC per audience source</strong> = spend &divide; closed deals</li>
+          <li>All of the above require CRM + UTM tagging &mdash; neither exists cleanly yet</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top:24px">
+      <h3>The Current State</h3>
+      <div class="table-wrap" style="margin-top:12px">
+        <table>
+          <thead><tr><th>Metric</th><th>Intent</th><th>Cold</th><th>Baseline (Craig)</th></tr></thead>
+          <tbody>
+            <tr><td>Leads generated</td><td class="num">0</td><td class="num">3</td><td class="num">–</td></tr>
+            <tr><td>Blended CPL</td><td class="num">N/A</td><td class="num">$208</td><td class="num">–</td></tr>
+            <tr><td>Meta CPR (best video)</td><td class="num">N/A</td><td class="num">$38.36</td><td class="num">–</td></tr>
+            <tr><td>Closed deals from these leads</td><td class="num">0</td><td class="num bad">0 (too early)</td><td class="num">–</td></tr>
+            <tr><td>Current CAC</td><td class="num">Undefined</td><td class="num">Undefined</td><td class="num highlight">~$2,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:14px"><strong>We have zero CAC data from this test for either audience.</strong> The audit report's conclusion is based on a CPL comparison where one side (Intent) was killed before it could produce any leads. The baseline CAC we're trying to beat ($2,000) hasn't been measured against either phase.</p>
+    </div>
+
+    <div class="callout green">
+      <h3>The Reframe for Craig</h3>
+      <p>The test goal is <strong>CAC reduction vs Craig's $2,000 baseline</strong>. That requires:</p>
+      <ol>
+        <li>Both audiences generate <strong>enough leads</strong> (both have not &mdash; Intent killed early, Cold still accumulating)</li>
+        <li>Those leads <strong>close or don't close</strong> over a 30-90 day sales cycle</li>
+        <li>We measure CAC per audience source and compare to $2,000</li>
+      </ol>
+      <p style="margin-top:14px">Declaring intent a "signal failure" on CPL data in a 4-day window &mdash; without running the test to CAC completion &mdash; is the exact mechanism by which B2B intent data gets incorrectly dismissed. The entire B2B intent industry (Bombora, 6sense, Demandbase, Metadata, Clay) exists because intent data's value shows up at CAC, not CPL. Evaluating it on CPL alone &mdash; the metric Craig himself called a vanity metric &mdash; undersells the opportunity.</p>
+    </div>
+  </div>
+</section>
+
 <!-- TIMELINE VISUAL -->
 <section id="timeline">
   <div class="container">
-    <div class="section-label">Section 05 — The Timeline Confound</div>
+    <div class="section-label">Section 06 — The Timeline Confound</div>
     <h2>When <em>displays</em> were turned off, and when <em>campaigns</em> were killed</h2>
-    <p class="section-desc">Display ad units were pulled from Intent ad sets by the CMO around April 17. Campaigns were killed entirely on April 19. That means the Intent campaigns only ran in video-only configuration for approximately 1-2 days before being shut down.</p>
+    <p class="section-desc">Display ad units were pulled from Intent ad sets around April 17. Campaigns were killed entirely on April 19. That means the Intent campaigns only ran in video-only configuration for approximately 1-2 days before being shut down.</p>
 
     <div class="timeline-wrap">
       <div class="timeline-grid">
@@ -909,7 +1004,7 @@ footer a { color:var(--accent); text-decoration:none; }
 
     <div class="callout red" style="margin-top:24px">
       <h3>Intent Intent Video-Only Window: ~1-2 Days</h3>
-      <p>The CMO turned off display ads in Intent ad sets on approximately April 17. Campaigns were killed April 19. This means the Intent campaigns had <strong>approximately 1.5 days of video-only runtime</strong> before being shut down &mdash; well before Meta's learning phase could complete.</p>
+      <p>Display ads were turned off in Intent ad sets on approximately April 17. Campaigns were killed April 19. This means the Intent campaigns had <strong>approximately 1.5 days of video-only runtime</strong> before being shut down &mdash; well before Meta's learning phase could complete.</p>
       <p style="margin-top:10px"><strong>Cold cold campaigns have been running video-only since April 19 and are now at 4+ days</strong> &mdash; approaching the learning phase completion threshold. The 3 leads generated in Cold arrived as the campaigns approached normal B2B learning-phase stabilization.</p>
     </div>
   </div>
@@ -918,7 +1013,7 @@ footer a { color:var(--accent); text-decoration:none; }
 <!-- COMPARISON -->
 <section id="comparison">
   <div class="container">
-    <div class="section-label">Section 06</div>
+    <div class="section-label">Section 07</div>
     <h2>The Comparison the Report Made vs. <em>The Actual Comparison</em></h2>
     <p class="section-desc">The audit report concluded "signal failure on the custom audience" by comparing Intent (intent) to Cold (cold). But the two phases differ on six structural variables, not just audience. The only honest conclusion from the data we have: we don't yet know.</p>
 
@@ -971,7 +1066,7 @@ footer a { color:var(--accent); text-decoration:none; }
 <!-- EVIDENCE -->
 <section id="evidence">
   <div class="container">
-    <div class="section-label">Section 07</div>
+    <div class="section-label">Section 08</div>
     <h2>Evidence the Intent Audience <em>Was Engaged</em></h2>
     <p class="section-desc">The strongest engagement signal anywhere in either phase came from the intent audience the report calls "low quality." A 32-second average play time on a video ad served to a low-intent audience is statistically improbable unless the audience is engaged.</p>
 
@@ -1015,7 +1110,7 @@ footer a { color:var(--accent); text-decoration:none; }
 <!-- WHAT'S MISSING -->
 <section>
   <div class="container">
-    <div class="section-label">Section 08</div>
+    <div class="section-label">Section 09</div>
     <h2>What the Report <em>Does Not Address</em></h2>
     <p class="section-desc">Several technical variables that strongly affect Meta campaign performance are not mentioned in the audit report. Any one of these could explain the Intent results without any audience quality issue.</p>
 
@@ -1092,7 +1187,7 @@ footer a { color:var(--accent); text-decoration:none; }
 <!-- ALGORITHM -->
 <section id="algorithm">
   <div class="container">
-    <div class="section-label">Section 09</div>
+    <div class="section-label">Section 10</div>
     <h2>How Meta's <em>Post-Andromeda</em> Algorithm Actually Treats Intent Audiences</h2>
     <p class="section-desc">Meta's algorithm changed fundamentally in late 2024. Understanding the architecture matters for interpreting the campaign results &mdash; because the framework the audit report uses to judge "signal failure" describes pre-2024 Meta, not how it works now.</p>
 
@@ -1155,7 +1250,7 @@ footer a { color:var(--accent); text-decoration:none; }
 <!-- B2B CASE STUDIES -->
 <section id="casestudies">
   <div class="container">
-    <div class="section-label">Section 10</div>
+    <div class="section-label">Section 11</div>
     <h2>B2B Firms Using Intent Data on Meta: <em>What Working Looks Like</em></h2>
     <p class="section-desc">Published case studies of B2B firms that successfully activated intent data as custom audiences on Meta. These illustrate the proven pattern &mdash; and what conditions need to be true for it to work.</p>
 
@@ -1256,7 +1351,7 @@ footer a { color:var(--accent); text-decoration:none; }
 <!-- CONCLUSION -->
 <section id="conclusion">
   <div class="container">
-    <div class="section-label">Section 11</div>
+    <div class="section-label">Section 12</div>
     <h2>The Proper <em>Next Step</em></h2>
     <p class="section-desc">Before concluding anything about the audience, run a controlled test that isolates the audience variable. Hold everything else constant.</p>
 
@@ -1314,9 +1409,9 @@ footer a { color:var(--accent); text-decoration:none; }
 <!-- BEST PRACTICES -->
 <section id="bestpractices">
   <div class="container">
-    <div class="section-label">Section 12</div>
+    <div class="section-label">Section 13</div>
     <h2>Best Practices for <em>Intent Data on Meta</em> (2025-2026)</h2>
-    <p class="section-desc">The current playbook for running intent-based custom audiences successfully on Meta. Every recommendation below is derived from published 2025-2026 case studies, Meta's official documentation, and the post-Andromeda algorithm mechanics detailed in Section 09.</p>
+    <p class="section-desc">The current playbook for running intent-based custom audiences successfully on Meta. Every recommendation below is derived from published 2025-2026 case studies, Meta's official documentation, and the post-Andromeda algorithm mechanics detailed in Section 10.</p>
 
     <!-- Audience -->
     <h3 style="font-family:var(--serif);font-size:1.4rem;color:#fff;margin:24px 0 12px;font-weight:400">1. Audience Construction</h3>
