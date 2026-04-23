@@ -745,7 +745,25 @@ footer a { color:var(--accent); text-decoration:none; }
         </tbody>
       </table>
     </div>
-    <p style="font-size:12px;color:var(--text-muted);margin:8px 0 20px">Intent AdSet 1 had the <strong>highest hold rate (20%)</strong> &mdash; higher than the Cold cold ad set that actually produced leads. Intent AdSet 2 had lowest CPM ($137). When the cold version got to run 4+ days, it produced 2 leads. Intent never got past day 5.</p>
+    <p style="font-size:12px;color:var(--text-muted);margin:8px 0 20px">Intent AdSet 1 had the <strong>highest hold rate (20%)</strong> &mdash; higher than the Cold ad set that produced the leads. Intent AdSet 2 had the lowest CPM ($137). When the cold version got to run 4+ days, it produced 2 leads. Intent never got past day 5.</p>
+
+    <div class="callout" style="background:rgba(251,191,36,0.06);border-color:rgba(251,191,36,0.3);margin:0 0 20px">
+      <h3 style="color:var(--amber)">Context: What Hold Rate Actually Measures</h3>
+      <p>Meta defines hold rate as <em>"the percentage of times your video was played to completion after playing for at least 3 seconds."</em> In other words: hold rate is a percentage <strong>of the hook-rate subset</strong>, not of total impressions. A seemingly-high hold rate on a low hook rate still means very few people actually completed the video.</p>
+      <p style="margin-top:12px"><strong>Doing the math on the Cold B2B Script 3 (the 2-lead winner):</strong></p>
+      <div style="font-family:var(--mono);font-size:12px;color:var(--text);background:var(--bg-card);padding:14px;border-radius:8px;border:1px solid var(--border);margin-top:10px;line-height:1.7">
+        269 impressions &times; 17% hook rate = <strong>~46 viewers got past 3 seconds</strong><br>
+        46 viewers &times; 15.91% hold rate = <strong>~7 viewers actually completed the video</strong><br>
+        7 ÷ 269 impressions = <strong>2.6% true video-completion rate</strong>
+      </div>
+      <p style="margin-top:12px"><strong>Comparing same-creative on Intent AdSet 1:</strong></p>
+      <div style="font-family:var(--mono);font-size:12px;color:var(--text);background:var(--bg-card);padding:14px;border-radius:8px;border:1px solid var(--border);margin-top:10px;line-height:1.7">
+        33 impressions &times; 16% hook rate = <strong>~5 viewers got past 3 seconds</strong><br>
+        5 viewers &times; 20% hold rate = <strong>~1 viewer completed the video</strong><br>
+        1 ÷ 33 impressions = <strong>3.2% true video-completion rate</strong>
+      </div>
+      <p style="margin-top:14px"><strong>On per-impression efficiency, the Intent audience actually produced a slightly higher true video-completion rate (3.2% vs 2.6%).</strong> Cold produced more absolute completions (7 vs 1) purely because it received ~8&times; more impressions. The raw 15.91% hold rate on Cold is not telling you "this audience engaged more deeply" &mdash; it's telling you "of the tiny fraction who made it past the hook, 15.91% watched to the end." When you multiply it back out to impressions, the per-impression completion rate is actually <em>lower</em> than Intent's.</p>
+    </div>
 
     <!-- B2B Script 1 FINAL -->
     <h3 style="font-family:var(--mono);font-size:13px;color:#fff;text-transform:uppercase;letter-spacing:1px;margin:28px 0 12px">B2B Script 1 FINAL</h3>
