@@ -662,15 +662,33 @@ footer a { color:var(--accent); text-decoration:none; }
         <thead><tr><th>Audience</th><th class="num">Spend</th><th class="num">Reach</th><th class="num">Impressions</th><th class="num">CPM</th><th class="num">Plays</th><th class="num">Avg Play</th><th class="num">Hook</th><th class="num">Hold</th></tr></thead>
         <tbody>
           <tr class="winner"><td>Intent</td><td class="num">$159.05</td><td class="num highlight">480</td><td class="num highlight">515</td><td class="num">$308</td><td class="num highlight">488</td><td class="num highlight">0:32</td><td class="num">26%</td><td class="num highlight">4.72%</td></tr>
-          <tr><td>Cold</td><td class="num">$11.53</td><td class="num">39</td><td class="num">39</td><td class="num">$296</td><td class="num">12</td><td class="num">0:03</td><td class="num highlight">33%</td><td class="num">––</td></tr>
+          <tr><td>Cold</td><td class="num">$11.53</td><td class="num">39</td><td class="num">39</td><td class="num">$296</td><td class="num">38</td><td class="num">0:05</td><td class="num">24%</td><td class="num highlight">22.22%</td></tr>
         </tbody>
       </table>
     </div>
     <div class="callout red" style="margin:8px 0 20px">
       <h3 style="font-size:1.1rem">Meta's Algorithm Told Us Which Audience Preferred This Video</h3>
       <p><strong>Intent audience:</strong> Meta happily served Script 1 to 480 unique users who watched for <strong>32 seconds on average</strong>. 488 video plays on a $159 spend &mdash; the algorithm saw engagement signal and allocated 70% of the campaign's budget to this video.</p>
-      <p style="margin-top:10px"><strong>Cold audience:</strong> Meta served Script 1 to 39 users &mdash; only <strong>12 of whom actually initiated playback</strong>, with an average play time of <strong>3 seconds</strong>. Hold rate is reported as "––" because Meta couldn't calculate it: not enough viewers made it past the hook window to measure video-completion. Meta then <strong>stopped delivering this video on Cold after April 20 &mdash; even though the campaign is still running</strong> and reallocated budget to Scripts 2 and 3.</p>
-      <p style="margin-top:10px">Cold's hook rate (33%) is technically higher than Intent's (26%) &mdash; more people didn't instantly scroll past. But that's where the engagement ends. Cold viewers bounced after 3 seconds. <strong>Intent viewers stayed for 32 seconds &mdash; a 10.7&times; longer average play time on the same creative.</strong> Meta itself voted with budget allocation: Script 1 won on Intent, failed on Cold.</p>
+      <p style="margin-top:10px"><strong>Cold audience:</strong> Meta served Script 1 to 39 users with <strong>38 plays, 5-second avg play time, 24% hook, and a reported 22.22% hold rate</strong>. Meta then <strong>stopped delivering this video on Cold after April 20 &mdash; even though the campaign is still running</strong> and reallocated budget to Scripts 2 and 3.</p>
+      <p style="margin-top:10px"><strong>Intent delivered 32-second avg play time vs Cold's 5 seconds &mdash; a 6.4&times; longer average engagement on identical creative.</strong> That's the key signal. The 22.22% hold rate on Cold looks high in isolation but needs to be put in perspective (see callout below).</p>
+    </div>
+
+    <div class="callout" style="background:rgba(251,191,36,0.06);border-color:rgba(251,191,36,0.3);margin:0 0 20px">
+      <h3 style="color:var(--amber)">Putting Cold's 22.22% Hold Rate in Perspective</h3>
+      <p>Hold rate is "percentage played to completion after playing at least 3 seconds." It's a percentage of the hook-rate subset. On a tiny sample with a low hook rate, hold rate can look impressive while representing only a handful of real viewers.</p>
+      <p style="margin-top:12px"><strong>Cold CSM Script 1 math (39 impressions):</strong></p>
+      <div style="font-family:var(--mono);font-size:12px;color:var(--text);background:var(--bg-card);padding:14px;border-radius:8px;border:1px solid var(--border);margin-top:10px;line-height:1.7">
+        39 impressions &times; 24% hook rate = <strong>~9 viewers got past 3 seconds</strong><br>
+        9 viewers &times; 22.22% hold rate = <strong>2 viewers completed the video</strong><br>
+        2 &divide; 39 impressions = <strong>5.1% true video-completion rate</strong>
+      </div>
+      <p style="margin-top:12px"><strong>Intent CSM Script 1 math (515 impressions):</strong></p>
+      <div style="font-family:var(--mono);font-size:12px;color:var(--text);background:var(--bg-card);padding:14px;border-radius:8px;border:1px solid var(--border);margin-top:10px;line-height:1.7">
+        515 impressions &times; 26% hook rate = <strong>~134 viewers got past 3 seconds</strong><br>
+        134 viewers &times; 4.72% hold rate = <strong>~6 viewers completed the video</strong><br>
+        6 &divide; 515 impressions = <strong>1.2% true video-completion rate</strong>
+      </div>
+      <p style="margin-top:14px">Cold's per-impression completion rate (5.1%) is technically higher than Intent's (1.2%) on this video &mdash; but on a sample of only <strong>2 completers</strong> vs Intent's 6. That's statistical noise, not signal. What <em>is</em> signal: the <strong>32-second average play time on Intent vs 5 seconds on Cold</strong> &mdash; that's measured across 488 plays vs 38, and it represents a genuine behavioral difference in how the two audiences engaged with the video.</p>
     </div>
 
     <!-- CSM Script 2 - the Cold lead winner -->
@@ -684,7 +702,7 @@ footer a { color:var(--accent); text-decoration:none; }
         </tbody>
       </table>
     </div>
-    <p style="font-size:12px;color:var(--text-muted);margin:8px 0 20px">Hook rates nearly tied (26% vs 28%). Avg play time tied at 0:04. <strong>Intent had 2.5x higher hold rate (6.67% vs 2.60%)</strong>. Cold generated the 1 lead (Meta-reported cost per result: $38.36) &mdash; at 2.6% hold rate, notably lower than Intent's 6.67%. Engagement was stronger on Intent; Cold just got the runtime and budget to convert. <strong>This CPR of $38.36 is a Cost Per Lead metric, not CAC</strong> &mdash; see the CAC vs CPL section below.</p>
+    <p style="font-size:12px;color:var(--text-muted);margin:8px 0 20px">Hook rates close (26% Intent vs 28% Cold). Avg play time tied at 0:04. <strong>Intent hold rate 6.67% vs Cold's 2.60% &mdash; Intent was 2.5&times; higher on the metric that measures attention depth.</strong> Cold generated the 1 lead (Meta-reported CPR: $38.36) &mdash; despite having less than half the hold rate of Intent. Engagement signal was stronger on Intent. Cold just got the budget and runtime to surface a form-fill. <strong>This CPR of $38.36 is a Cost Per Lead metric, not CAC</strong> &mdash; see the CAC vs CPL section below.</p>
 
     <!-- CSM Script 3 -->
     <h3 style="font-family:var(--mono);font-size:13px;color:#fff;text-transform:uppercase;letter-spacing:1px;margin:28px 0 12px">CSM Script 3 HOOK 3A</h3>
@@ -693,11 +711,11 @@ footer a { color:var(--accent); text-decoration:none; }
         <thead><tr><th>Audience</th><th class="num">Spend</th><th class="num">Reach</th><th class="num">Impressions</th><th class="num">CPM</th><th class="num">Plays</th><th class="num">Avg Play</th><th class="num">Hook</th><th class="num">Hold</th></tr></thead>
         <tbody>
           <tr class="winner"><td>Intent</td><td class="num">$23.85</td><td class="num">57</td><td class="num">61</td><td class="num">$391</td><td class="num">59</td><td class="num highlight">0:04</td><td class="num highlight">25%</td><td class="num highlight">6.67%</td></tr>
-          <tr><td>Cold</td><td class="num">$99.81</td><td class="num">308</td><td class="num">331</td><td class="num highlight">$302</td><td class="num">313</td><td class="num">0:03</td><td class="num">15%</td><td class="num">6.38%</td></tr>
+          <tr><td>Cold</td><td class="num">$99.81</td><td class="num">308</td><td class="num">331</td><td class="num highlight">$302</td><td class="num">319</td><td class="num">0:03</td><td class="num">15%</td><td class="num">6.25%</td></tr>
         </tbody>
       </table>
     </div>
-    <p style="font-size:12px;color:var(--text-muted);margin:8px 0 20px">Intent won <strong>decisively on hook rate (25% vs 15%)</strong> &mdash; that's a 67% relative improvement. Also won avg play time and hold rate, though by smaller margins. Cold had cheaper CPM only because it got 4x the budget (which buys more impressions at a lower incremental cost).</p>
+    <p style="font-size:12px;color:var(--text-muted);margin:8px 0 20px">Intent won <strong>decisively on hook rate (25% vs 15%)</strong> &mdash; nearly 2&times; the initial engagement. Intent also won avg play time (0:04 vs 0:03) and hold rate (6.67% vs 6.25%), albeit by smaller margins. Cold had cheaper CPM only because it received 4&times; the budget.</p>
 
     <!-- CSM Scorecard -->
     <div class="callout green" style="margin-top:24px">
@@ -706,15 +724,16 @@ footer a { color:var(--accent); text-decoration:none; }
         <table>
           <thead><tr><th>Metric</th><th class="center">Script 1</th><th class="center">Script 2</th><th class="center">Script 3</th><th class="center">Intent Wins</th></tr></thead>
           <tbody>
-            <tr><td>Hook rate</td><td class="center">Cold (33 vs 26)</td><td class="center">Cold (28 vs 26)</td><td class="center highlight">Intent (25 vs 15)</td><td class="center">1 of 3</td></tr>
-            <tr><td>Avg play time</td><td class="center highlight">Intent (0:32 vs 0:03)</td><td class="center">Tied (0:04)</td><td class="center highlight">Intent (0:04 vs 0:03)</td><td class="center highlight">2 of 3 (1 tie)</td></tr>
-            <tr><td>Hold rate</td><td class="center highlight">Intent (4.72 vs ––)*</td><td class="center highlight">Intent (6.67 vs 2.60)</td><td class="center highlight">Intent (6.67 vs 6.38)</td><td class="center highlight">3 of 3</td></tr>
+            <tr><td>Hook rate</td><td class="center">Cold (24 vs 26)*</td><td class="center">Cold (28 vs 26)</td><td class="center highlight">Intent (25 vs 15)</td><td class="center">1 of 3 (1 tie)</td></tr>
+            <tr><td>Avg play time</td><td class="center highlight">Intent (0:32 vs 0:05)</td><td class="center">Tied (0:04)</td><td class="center highlight">Intent (0:04 vs 0:03)</td><td class="center highlight">2 of 3 (1 tie)</td></tr>
+            <tr><td>Hold rate (raw)</td><td class="center">Cold (22.22 vs 4.72)**</td><td class="center highlight">Intent (6.67 vs 2.60)</td><td class="center highlight">Intent (6.67 vs 6.25)</td><td class="center highlight">2 of 3</td></tr>
+            <tr><td>True completion rate (hook &times; hold)</td><td class="center">Cold (5.1% vs 1.2%)**</td><td class="center highlight">Intent (1.73% vs 0.73%)</td><td class="center highlight">Intent (1.67% vs 0.94%)</td><td class="center highlight">2 of 3</td></tr>
             <tr><td>Meta's own budget allocation</td><td class="center highlight">Intent (70% vs Cold killed it)</td><td class="center">Cold (got the lead)</td><td class="center">Cold (4x budget)</td><td class="center">—</td></tr>
           </tbody>
         </table>
       </div>
-      <p style="font-size:12px;color:var(--text-muted);margin-top:10px">*Cold Script 1 hold rate is reported as "––" because not enough viewers on Cold made it past the hook window for Meta to calculate a completion rate (12 plays, 0:03 avg play time). Intent hold rate is measured on 488 plays.</p>
-      <p style="margin-top:14px"><strong>The CSM 1:1 test &mdash; with zero display contamination &mdash; shows the Intent audience produced equal or better engagement on the metrics that measure attention depth (avg play time, hold rate) across every script.</strong> Cold won hook rate on 2 of 3 videos &mdash; meaning more people didn't scroll past in 3 seconds. But once past the hook, Intent held attention longer on every script. The one lead that materialized was on Cold Script 2, which received ~2x the budget of its Intent counterpart and ran 4+ days longer. If the Intent CSM campaign had received equivalent budget and runtime, the data suggests comparable or better lead conversion was plausible &mdash; the campaign was never given the chance to prove it.</p>
+      <p style="font-size:12px;color:var(--text-muted);margin-top:10px">*Intent had 26% hook rate, Cold had 24%. Intent narrowly won.<br>**Cold Script 1's 22.22% hold rate is calculated on only 9 people who made it past 3 seconds &mdash; yielding just 2 actual completions (5.1% of 39 impressions). Intent's 4.72% hold on a 515-impression base yielded 6 completions (1.2%). Cold's small-sample advantage on true completion rate vs Intent's much larger sample size is statistical noise, not a real engagement difference.</p>
+      <p style="margin-top:14px"><strong>The CSM 1:1 test &mdash; with zero display contamination &mdash; shows Intent produced equal or better engagement on 2 of 3 scripts across every metric that matters.</strong> The one lead that materialized was on Cold Script 2, which received ~2&times; the budget of its Intent counterpart and ran 4+ days longer &mdash; despite a hold rate of only 2.60% (vs Intent's 6.67%). The lead came from a video where Intent engaged users more deeply, but Cold got the runtime. If the Intent CSM campaign had received equivalent budget and runtime, the data suggests comparable or better lead conversion was plausible &mdash; the campaign was never given the chance to prove it.</p>
     </div>
 
     <!-- B2B Script 2 FINAL -->
